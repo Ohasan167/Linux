@@ -9,7 +9,7 @@
     * Define Access for NFS Clients in Export File
     * How to Make NFS share Available to Clients
     * Configure NFS
-    * Setting Up NFS on Client Machine and Mounting an NFS   Share
+    * Setting Up NFS on Client Machine and Mounting an NFS Share
     * How to Install NFS Client Packages
     * Creating Local Directory
     * Mounting the NFS File Share Temporarily
@@ -28,22 +28,22 @@ The latest version of the Ubuntu 21.04 comes with nine months, until January 202
 
 ## Install NFS Server
 * NFS Kernel is the server component that enables a machine to expose directories as NFS shares
-* Before Installing, run the update command.
+* Before installing the NFS Kernel server, we need to update our system’s repository index. It will install the latest available version of a software through the Ubuntu repositories.
 ![Image1](../imgs/FinalProject/StepOne-Update.png)
 
 * Next, run the following command to install NFS Kernel Server
 ![Image2](../imgs/FinalProject/Step2.png)  
 ## Create Root NFS Directory
-* Next, create the root directory of the NFS shares
+* Next, create the root directory of the NFS shares.The directory that we want to share with the client system is called an export directory.
 ![image3](../imgs/FinalProject/step3.png)
 
-* Set permissions so that public / any user on the client machine can access the folder 
+* Set permissions so that public / any user on the client machine can access the folder. As we want all clients to access the directory, we will remove restrictive permissions of the export folder
 ![Image4](../imgs/FinalProject/step4.png)
 ## Define Access for NFS Clients in Export File
-* To grant access to NFS clients, define an export file
+*After creating the export folder, we will need to provide the clients the permission to access the host server machine. This permission is defined through the exports file located in your system’s /etc folder. To grant access to NFS clients, define an export file
 ![image5.1](../imgs/FinalProject/step5.png)
 
-* Next, edit the /etc/exports file in a text editor
+* Next, edit the /etc/exports file in a text editor. Add the required line(s) to the exports file and then save it by hitting Ctrl+X, entering Y, and then hitting Enter.
 ![image5.2](../imgs/FinalProject/step5.2.png)
 ## Make NFS share Available to Clients
 * After that, make the shared directory available to clients using the exportfs command
@@ -54,10 +54,10 @@ The latest version of the Ubuntu 21.04 comes with nine months, until January 202
 ## Setting Up NFS on Client Machine and Mounting an NFS   Share
 * Now set up the NFS server, with a Linux computer by mounting it on the local machine.
 ## Installing NFS Client Packages
-* NFS client Packages need to install to enable mounting an NFS share on a local Linux machine.
+* NFS client Packages need to install to enable mounting an NFS share on a local Linux machine. Before installing the NFS Common application, it needs to update the system’s repository index. After updating, install the NFS common package.
 ![image8](../imgs/FinalProject/step8.png)
 ## Creating Local Directory
-* This will be the mount point for the NFS share
+*  The client’s system needs a directory where all the content shared by the host server in the export folder can be accessed. We can create this folder anywhere on the system. Create a mount folder in the mnt directory of our client’s machine. This will be the mount point for the NFS share
 ![image10](../imgs/FinalProject/step10.png)
 ## Mounting the NFS File Share Temporarily
 * To mount the file share temporarily, run the following command
@@ -82,10 +82,13 @@ The latest version of the Ubuntu 21.04 comes with nine months, until January 202
 ![image13](../imgs/FinalProject/step14.png)
 
 ## Work Cited
-* VITUX- Linux Compendium, Author- Karim Buzdar
-https://vitux.com/install-nfs-server-and-client-on-ubuntu/
+
+* Red Hat Documentation
+https://web.mit.edu/rhel-doc/5/RHEL-5-manual/Deployment_Guide-en-US/ch-nfs.html
 
 * Linux NFS Server: How to Set Up Server and Client
 Posted by Jeff Whitaker, Cloud Data Services
 https://cloud.netapp.com/blog/azure-anf-blg-linux-nfs-server-how-to-set-up-server-and-client#H_H5
 
+* TutorialsPoint, "How to Install and Configure NFS server on Linux", author Sharon Christine
+https://www.tutorialspoint.com/how-to-install-and-configure-nfs-server-on-linux
