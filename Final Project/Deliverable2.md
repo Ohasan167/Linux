@@ -31,10 +31,7 @@ Type y and press ENTER to proceed. You can see that SSH connections are still al
 
 ## How does NFS work?
 To access data stored on another machine (i.e. a server) the server would implement NFS daemon processes to make data available to clients. The server administrator determines what to make available and ensures it can recognize validated clients.
-From the client's side, the machine requests access to exported data, typically by issuing a mount command. If successful, the client machine can then view and interact with the file systems within the decided parameters.
-
-## Why do you need to create Directory
-The directory that you want to share. It may be an entire volume though it need not be. If you share a directory, then all directories under it within the same file system will be shared as well. 
+From the client's side, the machine requests access to exported data, typically by issuing a mount command. If successful, the client machine can then view and interact with the file systems within the decided parameters. 
 
 ## Client machines that will have access to the directory. 
 The machines may be listed by their DNS address or their IP address. Using IP addresses is more reliable and more secure. If you need to use DNS addresses, and they do not seem to be resolving to the right machine.
