@@ -1,0 +1,8 @@
+## Exploring Desktop Environments
+A desktop environment is a set of software running on an operating system that forms the graphical user interface of a desktop. Typically this includes everything from the appearance of windows to the style of icons, files, folders, and mouse pointers. The desktop environment also determines which file manager to use, the default text editor, image viewer, wallpapers, and the interface used to log in and out of the local system.
+## What is a Shell?
+The shell is a program that takes keyboard commands and gives them to the operating system to execute. In the old days, this was the only user interface available on a Unix-like system like Linux. Today we have graphical user interfaces (GUIs) in addition to command line interfaces (CLIs) like the shell. On most Linux systems, a program called bash (which stands for Bourne Again SHell, an enhanced version of the original Unix shell program, sh, written by Steve Bourne) acts like a shell program. Besides bash, there are other shell programs available for Linux systems. These include: ksh, tcsh, and zsh.
+## Managing Software
+Linux, like most other operating systems, supports various types of software. Managing such software is a basic skill that all Linux users should have. Its operation via a graphical user interface is generally intuitive and self-explanatory. With the instructions provided on the screen, the user just has to follow them.
+## The Linux filesystem
+The Linux file system is generally an integrated layer of a Linux operating system that is used to manage storage data management. Help organize file on disk storage. Manage file name, file size, creation date, and more information about a file.
