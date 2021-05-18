@@ -1,20 +1,20 @@
 # Setup an NFS Server
 ## Table of Content
 * Setup an NFS Server
-    * Table of content
+  * Table of content
     * Hardware Requirements
     * Software Specifications
-    * How to Install NFS Kernel Server
-    * How to Create Root NFS Directory
-    * Define Access for NFS Clients in Export File
-    * How to Make NFS share Available to Clients
+      * How to Install NFS Kernel Server
+      * How to Create Root NFS Directory
+      * Define Access for NFS Clients in Export File
+      * How to Make NFS share Available to Clients
     * Configure NFS
     * Setting Up NFS on Client Machine and Mounting an NFS Share
-    * How to Install NFS Client Packages
-    * Creating Local Directory
-    * Mounting the NFS File Share Temporarily
-    * Mounting NFS File Shares Permanently
-    * Verify NFS is running
+      * How to Install NFS Client Packages
+      * Creating Local Directory
+      * Mounting the NFS File Share Temporarily
+      * Mounting NFS File Shares Permanently
+      * Verify NFS is running
     * Work Cited
 ## Hardware Requirements
 The NFS have the following hardware requirements: 
@@ -40,7 +40,7 @@ The latest version of the Ubuntu 21.04 comes with nine months, until January 202
 * Set permissions so that public / any user on the client machine can access the folder. As we want all clients to access the directory, we will remove restrictive permissions of the export folder
 ![Image4](../imgs/FinalProject/step4.png)
 ## Define Access for NFS Clients in Export File
-*After creating the export folder, we will need to provide the clients the permission to access the host server machine. This permission is defined through the exports file located in your system’s /etc folder. To grant access to NFS clients, define an export file
+* After creating the export folder, we will need to provide the clients the permission to access the host server machine. This permission is defined through the exports file located in your system’s /etc folder. To grant access to NFS clients, define an export file
 ![image5.1](../imgs/FinalProject/step5.png)
 
 * Next, edit the /etc/exports file in a text editor. Add the required line(s) to the exports file and then save it by hitting Ctrl+X, entering Y, and then hitting Enter.
