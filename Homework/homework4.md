@@ -15,18 +15,18 @@ Linux uses the Filesystem Hierarchy Standard (FHS) file system structure, which 
 ## Explain what type of files are stored in the following directories:
 
 ## Directory	What is it used for?
-* /bin	/bin is a standard subdirectory of the root directory 
-* /dev	/dev is the location of special or device files
-* /etc	/etc is a folder which contain all your system configuration    files in it
-* /home	/home directory for each user takes the form /home/username (where username is the name of the user account
-* /lib	/lib directory contains kernel modules and those shared library images 
-* /opt	/opt is a directory for installing unbundled packages
-* /tmp	/var/tmp is used for persistent files (as it may be preserved over reboots), and /tmp is for more temporary files.
-* /var	/var is a standard subdirectory of the root directory in Linux 
-* /proc	/proc filesystem is a pseudo-filesystem which provides an interface to kernel data structures
-* /usr	/usr is where user-land programs and data (as opposed to ' system land' programs and data) are
+* /bin is a standard subdirectory of the root directory 
+* /dev is the location of special or device files
+* /etc is a folder which contain all your system configuration    files in it
+* /home directory for each user takes the form /home/username (where username is the name of the user account
+* /lib directory contains kernel modules and those shared library images 
+* /opt is a directory for installing unbundled packages
+* /var/tmp is used for persistent files (as it may be preserved over reboots), and /tmp is for more temporary files.
+* /var is a standard subdirectory of the root directory in Linux 
+* /proc filesystem is a pseudo-filesystem which provides an interface to kernel data structures
+* /usr is where user-land programs and data (as opposed to ' system land' programs and data) are
 ## How does a period at the beginning of a file name means (example .bashrc)?
-A dot at the beginning of a file name hides the file in common file managers and for common shell programs. The reason is historical, when ls hid the special directories and hide anything that begins with a period.
+A period at the beginning of a file name hides the file in common file managers and for common shell programs. The reason is historical, when ls hid the special directories and hide anything that begins with a period.
 
 ## Which command would you use to list all the files inside the /usr/share/ directory?
 ls command. ls is one of the basic commands that every Linux user should know. The ls command lists files and directories in the file system and displays detailed information about them.
